@@ -209,4 +209,25 @@
         같은 페이지에서 이동할 때 사용
     
 # 폼 입력
-https://yunbinni.tistory.com/63
+    <form>
+    <form [속성="속성값"]>여러 폼 요소</form>
+    1) method = 
+        get 사용자 입력 내용이 드러나게 서버로 넘겨줌
+        post 사용자 입력 내용이 드러나지 않게 서버로 넘겨줌
+    2) name =
+    자바스크립트로 폼 이름 지정
+    3) action =
+    서버 프로그램 지정
+    4) target = 
+    열어볼 파일 위치 지정
+    5) autocomplete =
+    자동 완성 기능 지정(기본값 on)
+    6) <fieldset>
+    폼 내부에서 구역을 나눔
+        <legend> 구역 제목 붙이기
+
+# 레이블 붙이기
+    <label>레이블명<input></label>
+    <label for="id명">레이블명<input id="id명"></label>
+
+#
