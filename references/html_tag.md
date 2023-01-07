@@ -2,7 +2,7 @@
 
 
 ## 기본 태그
-    __<!DOCTYPE html>__
+    **<!DOCTYPE html>**
     웹 문서의 유형 지정
 
     <html>
