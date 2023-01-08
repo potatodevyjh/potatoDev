@@ -233,4 +233,121 @@
     <label>레이블명<input></label>
     <label for="id명">레이블명<input id="id명"></label>
 
-## hello
+## input
+    type =
+    1) text
+        한 줄 텍스트
+    2) password
+        비밀번호
+    3) search
+        검색
+    4) url
+        url
+    5) email
+        이메일 주소
+    6) tel
+        전화번호
+    7) checkbox
+        체크박스 (중복)
+    8) radio
+        라디오 버튼 (unique)
+    9) number
+        숫자 스핀 박스(버튼으로 조절)
+    10) range
+        숫자 슬라이드 막대
+    11) date
+    	local - 연, 월, 일
+    12) month
+    	local - 연, 월
+    13) week
+    	local - 연, 주
+    14) time
+    	local - 시, 분, 초, 분할 초
+    15) datetime
+    	UTC - 연, 월, 일, 시, 분, 초, 분할 초
+    16) datetime-local
+    	local - 연, 월, 일, 시, 분, 초, 분할 초
+    17) submit
+    	전송 버튼
+    18) reset
+    	리셋 버튼
+    19) image
+    	submit 버튼 이미지
+    20) button
+    	일반 버튼
+    21) file
+    	파일 첨부 버튼
+    22) hidden
+    	사용자에게 보이지 않는 값 필드
+
+### text, password와 같이 쓰이는 속성들
+    1) size=
+        화면에 출력할 글자 수
+    2) value=
+        text 필드에 보여줄 내용, password에서 사용 안함
+    3) maxlength=
+        최대 입력 가능한 글자 수
+
+### checkbox, radio랑 같이 쓰이는 속성들
+    1) value=
+    	서버에 전달될 값
+    2) checked=
+    	기본으로 선택하고 싶은 항목
+    3) name=
+    	radio 전용, 여러 옵션의 공통 이름
+
+### submit, reset와 같이 쓰이는 속성들
+    1) value=
+        버틍에 표시할 내용
+
+### image와 같이 쓰이는 속성들
+    1) src=
+    	이미지 경로
+    2) alt=
+    	대체 텍스트
+
+### button와 같이 쓰이는 속성들
+    1) value=
+    	버튼에 표시할 내용
+    2) onclick=
+    	클릭 시 실행할 JS함수
+
+### <input>의 다른 주요 속성들
+    1) autofocus=
+    	페이지를 불러오자마자 마우스 포인터가 표시
+        예) autofocus
+    2) placeholder=
+    	힌트를 표시, 내용을 입력하면 사라짐
+        예) 아이디를 입력하세요.
+    3) readonly=
+    	읽기 전용
+        예) readonly="readonly"
+            readonly="true"
+    4) required=
+    	필수 입력 필드
+        예) required="required"
+            required
+
+## 이외 주요 태그들
+    <textarea>
+    여러 줄의 텍스트 입력 영역
+        1) rows=	세로 줄 수, 길 경우 스크롤 막대가 생성됨
+        2) cols=	가로 너비(문자 단위)
+
+    <select>
+    드롭다운 목록 생성
+        1) size=	항목 개수
+        2) multiple=	둘 이상의 항목을 선택
+    <option>
+    옵션
+        1) value=	서버에 전달될 값
+        2) selected=	기본 선택 항목
+    <datalist>	
+    미리 입력된 데이터 목록
+    <option>	
+        1) value=	서버에 전달될 값
+    <button>	
+    버튼
+        1) type="submit"	폼을 서버로 전송
+        2) type="reset"	폼 초기화
+        3) type="button"	일반 버튼, <input type="button">과 같음
