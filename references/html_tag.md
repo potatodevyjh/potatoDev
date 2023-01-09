@@ -351,3 +351,6 @@
         1) type="submit"	폼을 서버로 전송
         2) type="reset"	폼 초기화
         3) type="button"	일반 버튼, <input type="button">과 같음
+
+
+        
